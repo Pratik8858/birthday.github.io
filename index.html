@@ -1,0 +1,1442 @@
+
+Toggle Sidebar
+
+BLACKBOXAI
+
+New
+
+Share
+
+New Chat
+
+History
+
+Image To App
+
+Agents
+
+JetBrains IDEs
+
+Coding Agent
+
+Mac Desktop App
+
+Agent IDE
+
+Artifacts
+
+Docs
+
+Features
+
+Blog
+
+Support
+
+Partnership
+
+Login
+
+
+
+
+Copy
+
+Download
+
+Share
+544 lines
+
+      oldTab.setAttribute('tabindex', '-1');
+    }
+    const newTab = document.getElementById(`tab-${index}`);
+    if (newTab) {
+      newTab.setAttribute('aria-selected', 'true');
+      newTab.setAttribute('tabindex', '0');
+      newTab.focus();
+    }
+    const selectedData = data[index];
+    photo.src = selectedData.photo;
+    photo.alt = selectedData.alt;
+    messageTitle.textContent = selectedData.messageTitle;
+    messageText.textContent = selectedData.message;
+    memoryText.textContent = selectedData.memory;
+    currentTabIndex = index;
+  }
+  function initialize() {
+    data.forEach((item,index) => {
+      const tab = createTab(item,index);
+      tabsContainer.appendChild(tab);
+    });
+    // Select first tab initially
+    selectTab(0);
+  }
+  initialize();
+</script>
+</body>
+</html>
+
+Create a github repository with all files and folder of website to open in GitHub for Your girlfriend a video playing in background and starting from 1st July to 29 July her birthday each date, as a tab to open a photo with a romantic message and memory written message, datewise from starrting 1 july to 29 july alphabetically message. Give all the source code and images to be used for GitHub repository .
+
+Copy message
+Edit message
+
+BLACKBOXAI
+
+The main task is to create a GitHub repository for a website dedicated to "Your girlfriend" with the following features:
+
+A video playing in the background.
+Datewise tabs from July 1 to July 29 (leading up to her birthday), each tab showing a photo with a romantic message and a memory, arranged alphabetically by the message.
+The entire source code and relevant placeholder images that can be hosted on GitHub.
+A modern, clean, responsive design with no overlapping content, ensuring the UI is visually excellent.
+Images must be included using https://placehold.co with descriptive alt text.
+All code should be contained in a dedicated folder/repository structure with proper files (e.g., index.html and assets folder for videos and images).
+The site should be ready for direct GitHub Pages hosting (static web hosting).
+The request also repeats requirements for a Modern Note-Taking App, but given the scope and multiple tasks, the primary focus is the romantic birthday countdown website. The note-taking app instructions might be an appended instruction but do not seem linked to this website ask. So I will focus on the romantic birthday website with video background and tabs for July 1-29.
+
+Plan for this:
+
+Create a root index.html file with embedded CSS and JS in the same file for simplicity.
+Background video is embedded with controls hidden and autoplay.
+Tabs for each day from July 1 to July 29.
+On clicking a tab, the corresponding photo and romantic message appear.
+Messages are sorted alphabetically by message (i.e., the messages for each day should be given and sorted alphabetically).
+Use spacing and styling for an elegant UI, including glassmorphism on content cards.
+Use Google Material icons where needed.
+Provide placeholder images for each date's photo with descriptive alt text.
+Provide a background video placeholder from placehold.co or a suitable video URL (note: placehold.co doesn't host videos, so I will use a public domain video URL or instruction on how to replace the video).
+The folder structure: /birthday-gift (root folder)
+index.html
+assets/
+background.mp4 (video file reference placeholder)
+images/
+image1.jpg ... image29.jpg placeholder images with alt text.
+After creating the content, I will package all in a single repository folder structure and provide the full source code and image URLs.
+
+I will proceed with step 1: Create the index.html content with inline CSS and JS, implementing the described UI and features.
+
+Since the request also requires to provide all files and folders, I will present the structure and content for:
+
+index.html
+assets/videos/background.mp4 (just placeholder URL)
+assets/images/imageXX.jpg (image URLs from placehold.co)
+I will generate romantic messages for each day (July 1-29), 29 items alphabetically sorted by message for the tabs.
+
+Then create the code. All images will be referenced by placeholder URLs with size 600x400 and descriptive alt text.
+
+No request for the note-taking app integration in this project, so I will not include that here.
+
+Proceeding now.
+
+birthday-gift/index.html
+
+html
+543 lines
+Click to close
+<!DOCTYPE html>
+<html lang="en">
+...
+🎨 Generating images based on descriptions...
+
+✅ Images generated successfully! Here's your updated content:
+
+The main task is to create a GitHub repository for a website dedicated to "Your girlfriend" with the following features:
+
+A video playing in the background.
+Datewise tabs from July 1 to July 29 (leading up to her birthday), each tab showing a photo with a romantic message and a memory, arranged alphabetically by the message.
+The entire source code and relevant placeholder images that can be hosted on GitHub.
+A modern, clean, responsive design with no overlapping content, ensuring the UI is visually excellent.
+Images must be included using https://placehold.co with descriptive alt text.
+All code should be contained in a dedicated folder/repository structure with proper files (e.g., index.html and assets folder for videos and images).
+The site should be ready for direct GitHub Pages hosting (static web hosting).
+The request also repeats requirements for a Modern Note-Taking App, but given the scope and multiple tasks, the primary focus is the romantic birthday countdown website. The note-taking app instructions might be an appended instruction but do not seem linked to this website ask. So I will focus on the romantic birthday website with video background and tabs for July 1-29.
+
+Plan for this:
+
+Create a root index.html file with embedded CSS and JS in the same file for simplicity.
+Background video is embedded with controls hidden and autoplay.
+Tabs for each day from July 1 to July 29.
+On clicking a tab, the corresponding photo and romantic message appear.
+Messages are sorted alphabetically by message (i.e., the messages for each day should be given and sorted alphabetically).
+Use spacing and styling for an elegant UI, including glassmorphism on content cards.
+Use Google Material icons where needed.
+Provide placeholder images for each date's photo with descriptive alt text.
+Provide a background video placeholder from placehold.co or a suitable video URL (note: placehold.co doesn't host videos, so I will use a public domain video URL or instruction on how to replace the video).
+The folder structure: /birthday-gift (root folder)
+index.html
+assets/
+background.mp4 (video file reference placeholder)
+images/
+image1.jpg ... image29.jpg placeholder images with alt text.
+After creating the content, I will package all in a single repository folder structure and provide the full source code and image URLs.
+
+I will proceed with step 1: Create the index.html content with inline CSS and JS, implementing the described UI and features.
+
+Since the request also requires to provide all files and folders, I will present the structure and content for:
+
+index.html
+assets/videos/background.mp4 (just placeholder URL)
+assets/images/imageXX.jpg (image URLs from placehold.co)
+I will generate romantic messages for each day (July 1-29), 29 items alphabetically sorted by message for the tabs.
+
+Then create the code. All images will be referenced by placeholder URLs with size 600x400 and descriptive alt text.
+
+No request for the note-taking app integration in this project, so I will not include that here.
+
+Proceeding now.
+
+birthday-gift/index.html
+
+html
+543 lines
+Click to expand
+<!DOCTYPE html>
+<html lang="en">
+...
+
+Saved
+The main task is to create a GitHub repository for a website dedicated to "Your girlfriend" with the following features:
+
+A video playing in the background.
+
+Datewise tabs from July 1 to July 29 (leading up to her birthday), each tab showing a photo with a romantic message and a memory, arranged alphabetically by the message.
+
+The entire source code and relevant placeholder images that can be hosted on GitHub.
+
+A modern, clean, responsive design with no overlapping content, ensuring the UI is visually excellent.
+
+Images must be included using https://placehold.co with descriptive alt text.
+
+All code should be contained in a dedicated folder/repository structure with proper files (e.g., index.html and assets folder for videos and images).
+
+The site should be ready for direct GitHub Pages hosting (static web hosting).
+
+The request also repeats requirements for a Modern Note-Taking App, but given the scope and multiple tasks, the primary focus is the romantic birthday countdown website. The note-taking app instructions might be an appended instruction but do not seem linked to this website ask. So I will focus on the romantic birthday website with video background and tabs for July 1-29.
+
+Plan for this:
+
+Create a root index.html file with embedded CSS and JS in the same file for simplicity.
+
+Background video is embedded with controls hidden and autoplay.
+
+Tabs for each day from July 1 to July 29.
+
+On clicking a tab, the corresponding photo and romantic message appear.
+
+Messages are sorted alphabetically by message (i.e., the messages for each day should be given and sorted alphabetically).
+
+Use spacing and styling for an elegant UI, including glassmorphism on content cards.
+
+Use Google Material icons where needed.
+
+Provide placeholder images for each date's photo with descriptive alt text.
+
+Provide a background video placeholder from placehold.co or a suitable video URL (note: placehold.co doesn't host videos, so I will use a public domain video URL or instruction on how to replace the video).
+
+The folder structure:
+/birthday-gift (root folder)
+index.html
+
+assets/
+background.mp4 (video file reference placeholder)
+
+images/
+image1.jpg ... image29.jpg placeholder images with alt text.
+
+
+
+
+
+
+
+After creating the content, I will package all in a single repository folder structure and provide the full source code and image URLs.
+
+I will proceed with step 1: Create the index.html content with inline CSS and JS, implementing the described UI and features.
+
+Since the request also requires to provide all files and folders, I will present the structure and content for:
+
+index.html
+
+assets/videos/background.mp4 (just placeholder URL)
+
+assets/images/imageXX.jpg (image URLs from placehold.co)
+
+I will generate romantic messages for each day (July 1-29), 29 items alphabetically sorted by message for the tabs.
+
+Then create the code. All images will be referenced by placeholder URLs with size 600x400 and descriptive alt text.
+
+No request for the note-taking app integration in this project, so I will not include that here.
+
+Proceeding now.
+
+birthday-gift/index.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Countdown to Your Birthday - A Romantic Gift</title>
+<!-- Google Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<style>
+  /* Import Inter font */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+  /* Reset and base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0; padding: 0; height: 100%;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+    overflow-x: hidden;
+  }
+
+  /* Background Video */
+  #bg-video {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+  }
+
+  /* Overlay for dark tint */
+  #overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(13,17,23,0.7);
+    z-index: 0;
+  }
+
+  /* Container for content */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 48px 16px 64px 16px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.3em;
+    text-align: center;
+    color: #58a6ff;
+    text-shadow: 0 0 8px #58a6ff88;
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    color: #adbac7;
+  }
+
+  /* Tabs container (scrollable) */
+  .tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #58a6ff44 transparent;
+  }
+  .tabs::-webkit-scrollbar {
+    height: 8px;
+  }
+  .tabs::-webkit-scrollbar-thumb {
+    background-color: #58a6ff88;
+    border-radius: 4px;
+  }
+  .tab {
+    flex: 0 0 auto;
+    background: rgba(88, 166, 255, 0.15);
+    color: #58a6ff;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 16px 16px 0 0;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    min-width: 80px;
+    text-align: center;
+  }
+  .tab[aria-selected="true"], .tab:hover {
+    background: #58a6ff;
+    color: #0d1117;
+    box-shadow: 0 -4px 8px #58a6ff88;
+  }
+
+  /* Content card with glassmorphism */
+  .content {
+    flex: 1;
+    background: rgba(21, 26, 33, 0.7);
+    backdrop-filter: blur(14px) saturate(180%);
+    -webkit-backdrop-filter: blur(14px) saturate(180%);
+    border-radius: 24px;
+    box-shadow: 0 12px 32px rgba(88, 166, 255, 0.25);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #c9d1d9;
+  }
+
+  /* Photo specific styling */
+  .photo {
+    max-width: 100%;
+    max-height: 360px;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+
+  /* Romantic message and memory container */
+  .message {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  .memory {
+    font-style: italic;
+    color: #8b949e;
+    margin-top: 12px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .photo {
+      max-height: 240px;
+    }
+    .tab {
+      min-width: 68px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Scroll bar for tab list improved */
+  .tabs::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Focus styles */
+  .tab:focus-visible {
+    outline: 3px solid #58a6ff;
+    outline-offset: 2px;
+    outline-radius: 16px 16px 0 0;
+  }
+</style>
+</head>
+<body>
+<video id="bg-video" autoplay muted loop playsinline>
+  <source src="./assets/videos/background.mp4" type="video/mp4" />
+  Sorry, your browser does not support the video tag.
+</video>
+<div id="overlay"></div>
+
+<div class="container" role="main" aria-label="Birthday countdown tabs and messages">
+  <h1>Countdown to Your Birthday</h1>
+  <div role="tablist" aria-label="July countdown days" class="tabs" id="tabs"></div>
+  <article class="content" tabindex="0" aria-live="polite" aria-atomic="true" id="content">
+    <img src="" alt="" class="photo" id="photo" />
+    <section>
+      <h2 id="message-title"></h2>
+      <p class="message" id="message-text"></p>
+      <p class="memory" id="memory-text"></p>
+    </section>
+  </article>
+</div>
+
+<script>
+  // Data: Datewise romantic messages and memories alphabetically sorted by message text
+  const data = [
+    {
+      date: "2023-07-01",
+      day: "July 1",
+      photo: "https://placehold.co/600x400/6366f1/ffffff?text=Love+Always",
+      alt: "A heart-shaped balloon floating in the blue sky, symbolizing love always",
+      messageTitle: "Always in My Heart",
+      message: "Always in my heart, you light up every day.",
+      memory: "Remember our first sunset watching at the lake - pure magic."
+    },
+    {
+      date: "2023-07-02",
+      day: "July 2",
+      photo: "https://placehold.co/600x400/7c3aed/ffffff?text=Beautiful+Moments",
+      alt: "A couple holding hands amid a field of blooming flowers",
+      messageTitle: "Beautiful Moments",
+      message: "Beautiful moments shared with you make life extraordinary.",
+      memory: "Our picnic in the blooming fields will always be special."
+    },
+    {
+      date: "2023-07-03",
+      day: "July 3",
+      photo: "https://placehold.co/600x400/9333ea/ffffff?text=Cherished+Memories",
+      alt: "Photo of intertwined hands under the sunset.",
+      messageTitle: "Cherished Memories",
+      message: "Cherished memories we create are treasures of my soul.",
+      memory: "That evening walk by the river changed everything for me."
+    },
+    {
+      date: "2023-07-04",
+      day: "July 4",
+      photo: "https://placehold.co/600x400/8b5cf6/ffffff?text=Devoted+Forever",
+      alt: "A tender embrace under a starry night sky",
+      messageTitle: "Devoted Forever",
+      message: "Devoted forever to you, my one and only love.",
+      memory: "Our first stargazing night remains unforgettable."
+    },
+    {
+      date: "2023-07-05",
+      day: "July 5",
+      photo: "https://placehold.co/600x400/a78bfa/ffffff?text=Endless+Love",
+      alt: "Endless road stretching into the horizon with hearts in the foreground",
+      messageTitle: "Endless Love",
+      message: "Endless love that grows with each passing day.",
+      memory: "Driving through the mountains, dreaming about forever."
+    },
+    {
+      date: "2023-07-06",
+      day: "July 6",
+      photo: "https://placehold.co/600x400/c4b5fd/1e40af?text=Forever+Yours",
+      alt: "Two rings entwined on a velvet cushion symbolizing forever yours",
+      messageTitle: "Forever Yours",
+      message: "Forever yours, with all my heart and soul.",
+      memory: "That quiet moment in the garden where we promised forever."
+    },
+    {
+      date: "2023-07-07",
+      day: "July 7",
+      photo: "https://placehold.co/600x400/ede9fe/5b21b6?text=Glowing+Together",
+      alt: "Soft glowing lanterns floating into the night sky",
+      messageTitle: "Glowing Together",
+      message: "Glowing together, our love shines brighter every day.",
+      memory: "Our lantern festival night, full of warmth and dreams."
+    },
+    {
+      date: "2023-07-08",
+      day: "July 8",
+      photo: "https://placehold.co/600x400/e0e7ff/312e81?text=Heart+Strings",
+      alt: "A heart drawn in the sand by the ocean shore",
+      messageTitle: "Heart Strings",
+      message: "Heart strings tied forever, you complete my melody.",
+      memory: "That day by the ocean where time stood still for us."
+    },
+    {
+      date: "2023-07-09",
+      day: "July 9",
+      photo: "https://placehold.co/600x400/c7d2fe/3730a3?text=Infinite+Joy",
+      alt: "Joyful couple laughing under sunshine",
+      messageTitle: "Infinite Joy",
+      message: "Infinite joy comes from moments shared with you.",
+      memory: "Our laughter-filled hike that made every step worthwhile."
+    },
+    {
+      date: "2023-07-10",
+      day: "July 10",
+      photo: "https://placehold.co/600x400/a5b4fc/312e81?text=Joyful+Times",
+      alt: "Playful couple dancing in the rain",
+      messageTitle: "Joyful Times",
+      message: "Joyful times together brighten up my every day.",
+      memory: "That rainy afternoon dance we shared without a care."
+    },
+    {
+      date: "2023-07-11",
+      day: "July 11",
+      photo: "https://placehold.co/600x400/8b5cf6/ffffff?text=Kiss+Me",
+      alt: "Couple about to kiss with sunset behind",
+      messageTitle: "Kiss Me",
+      message: "Kiss me under the stars and seal our love forever.",
+      memory: "Our first kiss by the seaside is etched in my heart."
+    },
+    {
+      date: "2023-07-12",
+      day: "July 12",
+      photo: "https://placehold.co/600x400/7c3aed/ffffff?text=Love+Birds",
+      alt: "Two birds sitting closely on a branch at sunrise",
+      messageTitle: "Love Birds",
+      message: "Love birds soaring high, our hearts beat as one.",
+      memory: "Watching the sunrise together in silence and warmth."
+    },
+    {
+      date: "2023-07-13",
+      day: "July 13",
+      photo: "https://placehold.co/600x400/6d28d9/ffffff?text=Magical+Moments",
+      alt: "Magical sparkles floating around a couple",
+      messageTitle: "Magical Moments",
+      message: "Magical moments with you make every day special.",
+      memory: "The surprise candlelight dinner you'll never forget."
+    },
+    {
+      date: "2023-07-14",
+      day: "July 14",
+      photo: "https://placehold.co/600x400/5b21b6/ffffff?text=Never+Apart",
+      alt: "Two hands holding tightly",
+      messageTitle: "Never Apart",
+      message: "Never apart, no matter where life takes us.",
+      memory: "Our long-distance calls filled with love and hope."
+    },
+    {
+      date: "2023-07-15",
+      day: "July 15",
+      photo: "https://placehold.co/600x400/4c1d95/ffffff?text=Only+You",
+      alt: "Heart shaped cloud in a blue sky",
+      messageTitle: "Only You",
+      message: "Only you hold the key to my heart forever.",
+      memory: "That cloud watching day where we talked about dreams."
+    },
+    {
+      date: "2023-07-16",
+      day: "July 16",
+      photo: "https://placehold.co/600x400/4338ca/ffffff?text=Pure+Love",
+      alt: "A glowing heart made of light in the dark",
+      messageTitle: "Pure Love",
+      message: "Pure love like ours is rare and beautiful.",
+      memory: "Our silent night walk in the city, hand in hand."
+    },
+    {
+      date: "2023-07-17",
+      day: "July 17",
+      photo: "https://placehold.co/600x400/3730a3/ffffff?text=Quiet+Times",
+      alt: "Quiet lake at sunrise with soft pastel colors",
+      messageTitle: "Quiet Times",
+      message: "Quiet times with you bring peace to my soul.",
+      memory: "That calm morning by the lake where everything felt right."
+    },
+    {
+      date: "2023-07-18",
+      day: "July 18",
+      photo: "https://placehold.co/600x400/312e81/ffffff?text=Radiant+Love",
+      alt: "Radiant sun shining through a couple's hands",
+      messageTitle: "Radiant Love",
+      message: "Radiant love that shines through all our days.",
+      memory: "When you surprised me with that beautiful bouquet."
+    },
+    {
+      date: "2023-07-19",
+      day: "July 19",
+      photo: "https://placehold.co/600x400/2c1a8c/ffffff?text=Sweet+Dreams",
+      alt: "Luxurious white bed with rose petals",
+      messageTitle: "Sweet Dreams",
+      message: "Sweet dreams of us keep me warm through the night.",
+      memory: "Our cozy movie night under the blanket fort."
+    },
+    {
+      date: "2023-07-20",
+      day: "July 20",
+      photo: "https://placehold.co/600x400/2c1a8c/ffffff?text=Together+Forever",
+      alt: "Two shadowed figures holding hands",
+      messageTitle: "Together Forever",
+      message: "Together forever, through all life’s chapters.",
+      memory: "Our promises made under the old oak tree."
+    },
+    {
+      date: "2023-07-21",
+      day: "July 21",
+      photo: "https://placehold.co/600x400/312e81/ffffff?text=Unbreakable+Bond",
+      alt: "Rope tied tight in a unbreakable knot",
+      messageTitle: "Unbreakable Bond",
+      message: "Unbreakable bond that cannot be undone.",
+      memory: "The day we built our plans for the future."
+    },
+    {
+      date: "2023-07-22",
+      day: "July 22",
+      photo: "https://placehold.co/600x400/3730a3/ffffff?text=Valentine+Vibes",
+      alt: "Decorative Valentine's Day setting with candles and roses",
+      messageTitle: "Valentine Vibes",
+      message: "Valentine vibes every day because of you.",
+      memory: "That Valentine's picnic we shared in the park."
+    },
+    {
+      date: "2023-07-23",
+      day: "July 23",
+      photo: "https://placehold.co/600x400/4338ca/ffffff?text=Warm+Hugs",
+      alt: "Warm hugs between lovers on a chilly day",
+      messageTitle: "Warm Hugs",
+      message: "Warm hugs from you melt away all worries.",
+      memory: "That chilly winter evening wrapped in your arms."
+    },
+    {
+      date: "2023-07-24",
+      day: "July 24",
+      photo: "https://placehold.co/600x400/4c1d95/ffffff?text=XOXO+Forever",
+      alt: "Handwritten note with the words XOXO, symbolizing hugs and kisses",
+      messageTitle: "XOXO Forever",
+      message: "XOXO forever, every kiss a promise.",
+      memory: "Our love notes that make me smile anytime."
+    },
+    {
+      date: "2023-07-25",
+      day: "July 25",
+      photo: "https://placehold.co/600x400/5b21b6/ffffff?text=Yearning+Heart",
+      alt: "A heart carved on an old tree trunk",
+      messageTitle: "Yearning Heart",
+      message: "Yearning heart beats only for you.",
+      memory: "Waiting eagerly for you when we were apart."
+    },
+    {
+      date: "2023-07-26",
+      day: "July 26",
+      photo: "https://placehold.co/600x400/6d28d9/ffffff?text=Zephyr+Love",
+      alt: "Gentle breeze flowing through cherry blossom trees",
+      messageTitle: "Zephyr Love",
+      message: "Zephyr love, gentle and enduring like the wind.",
+      memory: "Walking through the blooming cherry blossoms hand in hand."
+    },
+    {
+      date: "2023-07-27",
+      day: "July 27",
+      photo: "https://placehold.co/600x400/7c3aed/ffffff?text=Amazing+Journey",
+      alt: "A winding path through a forest in autumn",
+      messageTitle: "Amazing Journey",
+      message: "Amazing journey with you every moment feels new.",
+      memory: "Our adventurous hike to the hidden waterfall."
+    },
+    {
+      date: "2023-07-28",
+      day: "July 28",
+      photo: "https://placehold.co/600x400/8b5cf6/ffffff?text=Boundless+Affection",
+      alt: "Endless field of wildflowers stretching to the horizon",
+      messageTitle: "Boundless Affection",
+      message: "Boundless affection that knows no limits.",
+      memory: "Our summer days cuddled in fields of lavender."
+    },
+    {
+      date: "2023-07-29",
+      day: "July 29",
+      photo: "https://placehold.co/600x400/9333ea/ffffff?text=Cherished+You",
+      alt: "Two hearts carved into a wooden bench",
+      messageTitle: "Cherished You",
+      message: "Cherished you in every smile and every touch.",
+      memory: "Our anniversary bench always reminds me of us."
+    }
+  ];
+
+  // Sort data alphabetically by message
+  data.sort((a, b) => a.message.localeCompare(b.message));
+
+  const tabsContainer = document.getElementById('tabs');
+  const photo = document.getElementById('photo');
+  const messageTitle = document.getElementById('message-title');
+  const messageText = document.getElementById('message-text');
+  const memoryText = document.getElementById('memory-text');
+
+  let currentTabIndex = 0;
+
+  function createTab(item, index) {
+    const tab = document.createElement('button');
+    tab.setAttribute('role', 'tab');
+    tab.setAttribute('aria-selected', 'false');
+    tab.setAttribute('tabindex', '-1');
+    tab.className = 'tab';
+    tab.id = `tab-${index}`;
+    tab.innerText = item.day;
+    tab.addEventListener('click', () => selectTab(index));
+    tab.addEventListener('keydown', (e) => {
+      let newIndex = null;
+      if (e.key === 'ArrowRight') {
+        newIndex = (index + 1) % data.length;
+      } else if (e.key === 'ArrowLeft') {
+        newIndex = (index - 1 + data.length) % data.length;
+      } else if (e.key === 'Home') {
+        newIndex = 0;
+      } else if (e.key === 'End') {
+        newIndex = data.length -1;
+      }
+      if (newIndex !== null) {
+        e.preventDefault();
+        document.getElementById(`tab-${newIndex}`).focus();
+        selectTab(newIndex);
+      }
+    });
+    return tab;
+  }
+
+  function selectTab(index) {
+    if (currentTabIndex === index) return;
+    const oldTab = document.getElementById(`tab-${currentTabIndex}`);
+    if (oldTab) {
+      oldTab.setAttribute('aria-selected', 'false');
+      oldTab.setAttribute('tabindex', '-1');
+    }
+    const newTab = document.getElementById(`tab-${index}`);
+    if (newTab) {
+      newTab.setAttribute('aria-selected', 'true');
+      newTab.setAttribute('tabindex', '0');
+      newTab.focus();
+    }
+    const selectedData = data[index];
+    photo.src = selectedData.photo;
+    photo.alt = selectedData.alt;
+    messageTitle.textContent = selectedData.messageTitle;
+    messageText.textContent = selectedData.message;
+    memoryText.textContent = selectedData.memory;
+    currentTabIndex = index;
+  }
+
+  function initialize() {
+    data.forEach((item,index) => {
+      const tab = createTab(item,index);
+      tabsContainer.appendChild(tab);
+    });
+    // Select first tab initially
+    selectTab(0);
+  }
+
+  initialize();
+
+</script>
+
+</body>
+</html>
+
+🎨 Generating images based on descriptions...
+
+✅ Images generated successfully! Here's your updated content:
+
+The main task is to create a GitHub repository for a website dedicated to "Your girlfriend" with the following features:
+
+A video playing in the background.
+
+Datewise tabs from July 1 to July 29 (leading up to her birthday), each tab showing a photo with a romantic message and a memory, arranged alphabetically by the message.
+
+The entire source code and relevant placeholder images that can be hosted on GitHub.
+
+A modern, clean, responsive design with no overlapping content, ensuring the UI is visually excellent.
+
+Images must be included using https://placehold.co with descriptive alt text.
+
+All code should be contained in a dedicated folder/repository structure with proper files (e.g., index.html and assets folder for videos and images).
+
+The site should be ready for direct GitHub Pages hosting (static web hosting).
+
+The request also repeats requirements for a Modern Note-Taking App, but given the scope and multiple tasks, the primary focus is the romantic birthday countdown website. The note-taking app instructions might be an appended instruction but do not seem linked to this website ask. So I will focus on the romantic birthday website with video background and tabs for July 1-29.
+
+Plan for this:
+
+Create a root index.html file with embedded CSS and JS in the same file for simplicity.
+
+Background video is embedded with controls hidden and autoplay.
+
+Tabs for each day from July 1 to July 29.
+
+On clicking a tab, the corresponding photo and romantic message appear.
+
+Messages are sorted alphabetically by message (i.e., the messages for each day should be given and sorted alphabetically).
+
+Use spacing and styling for an elegant UI, including glassmorphism on content cards.
+
+Use Google Material icons where needed.
+
+Provide placeholder images for each date's photo with descriptive alt text.
+
+Provide a background video placeholder from placehold.co or a suitable video URL (note: placehold.co doesn't host videos, so I will use a public domain video URL or instruction on how to replace the video).
+
+The folder structure:
+/birthday-gift (root folder)
+index.html
+
+assets/
+background.mp4 (video file reference placeholder)
+
+images/
+image1.jpg ... image29.jpg placeholder images with alt text.
+
+
+
+
+
+
+
+After creating the content, I will package all in a single repository folder structure and provide the full source code and image URLs.
+
+I will proceed with step 1: Create the index.html content with inline CSS and JS, implementing the described UI and features.
+
+Since the request also requires to provide all files and folders, I will present the structure and content for:
+
+index.html
+
+assets/videos/background.mp4 (just placeholder URL)
+
+assets/images/imageXX.jpg (image URLs from placehold.co)
+
+I will generate romantic messages for each day (July 1-29), 29 items alphabetically sorted by message for the tabs.
+
+Then create the code. All images will be referenced by placeholder URLs with size 600x400 and descriptive alt text.
+
+No request for the note-taking app integration in this project, so I will not include that here.
+
+Proceeding now.
+
+birthday-gift/index.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Countdown to Your Birthday - A Romantic Gift</title>
+<!-- Google Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<style>
+  /* Import Inter font */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+  /* Reset and base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0; padding: 0; height: 100%;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+    overflow-x: hidden;
+  }
+
+  /* Background Video */
+  #bg-video {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+  }
+
+  /* Overlay for dark tint */
+  #overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(13,17,23,0.7);
+    z-index: 0;
+  }
+
+  /* Container for content */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 48px 16px 64px 16px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.3em;
+    text-align: center;
+    color: #58a6ff;
+    text-shadow: 0 0 8px #58a6ff88;
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    color: #adbac7;
+  }
+
+  /* Tabs container (scrollable) */
+  .tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #58a6ff44 transparent;
+  }
+  .tabs::-webkit-scrollbar {
+    height: 8px;
+  }
+  .tabs::-webkit-scrollbar-thumb {
+    background-color: #58a6ff88;
+    border-radius: 4px;
+  }
+  .tab {
+    flex: 0 0 auto;
+    background: rgba(88, 166, 255, 0.15);
+    color: #58a6ff;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 16px 16px 0 0;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    min-width: 80px;
+    text-align: center;
+  }
+  .tab[aria-selected="true"], .tab:hover {
+    background: #58a6ff;
+    color: #0d1117;
+    box-shadow: 0 -4px 8px #58a6ff88;
+  }
+
+  /* Content card with glassmorphism */
+  .content {
+    flex: 1;
+    background: rgba(21, 26, 33, 0.7);
+    backdrop-filter: blur(14px) saturate(180%);
+    -webkit-backdrop-filter: blur(14px) saturate(180%);
+    border-radius: 24px;
+    box-shadow: 0 12px 32px rgba(88, 166, 255, 0.25);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #c9d1d9;
+  }
+
+  /* Photo specific styling */
+  .photo {
+    max-width: 100%;
+    max-height: 360px;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+
+  /* Romantic message and memory container */
+  .message {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  .memory {
+    font-style: italic;
+    color: #8b949e;
+    margin-top: 12px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .photo {
+      max-height: 240px;
+    }
+    .tab {
+      min-width: 68px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Scroll bar for tab list improved */
+  .tabs::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Focus styles */
+  .tab:focus-visible {
+    outline: 3px solid #58a6ff;
+    outline-offset: 2px;
+    outline-radius: 16px 16px 0 0;
+  }
+</style>
+</head>
+<body>
+<video id="bg-video" autoplay muted loop playsinline>
+  <source src="./assets/videos/background.mp4" type="video/mp4" />
+  Sorry, your browser does not support the video tag.
+</video>
+<div id="overlay"></div>
+
+<div class="container" role="main" aria-label="Birthday countdown tabs and messages">
+  <h1>Countdown to Your Birthday</h1>
+  <div role="tablist" aria-label="July countdown days" class="tabs" id="tabs"></div>
+  <article class="content" tabindex="0" aria-live="polite" aria-atomic="true" id="content">
+    <img src="" alt="" class="photo" id="photo" />
+    <section>
+      <h2 id="message-title"></h2>
+      <p class="message" id="message-text"></p>
+      <p class="memory" id="memory-text"></p>
+    </section>
+  </article>
+</div>
+
+<script>
+  // Data: Datewise romantic messages and memories alphabetically sorted by message text
+  const data = [
+    {
+      date: "2023-07-01",
+      day: "July 1",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a6285034-ec80-45e0-af49-34c7fdf520ec.png",
+      alt: "A heart-shaped balloon floating in the blue sky, symbolizing love always",
+      messageTitle: "Always in My Heart",
+      message: "Always in my heart, you light up every day.",
+      memory: "Remember our first sunset watching at the lake - pure magic."
+    },
+    {
+      date: "2023-07-02",
+      day: "July 2",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a3749a00-1ecc-4466-8c16-fe931dd816af.png",
+      alt: "A couple holding hands amid a field of blooming flowers",
+      messageTitle: "Beautiful Moments",
+      message: "Beautiful moments shared with you make life extraordinary.",
+      memory: "Our picnic in the blooming fields will always be special."
+    },
+    {
+      date: "2023-07-03",
+      day: "July 3",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/21f70552-1f33-404d-96f1-8ab83135601a.png",
+      alt: "Photo of intertwined hands under the sunset.",
+      messageTitle: "Cherished Memories",
+      message: "Cherished memories we create are treasures of my soul.",
+      memory: "That evening walk by the river changed everything for me."
+    },
+    {
+      date: "2023-07-04",
+      day: "July 4",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0e7963e4-9869-40b4-8f80-6033bbee9fe2.png",
+      alt: "A tender embrace under a starry night sky",
+      messageTitle: "Devoted Forever",
+      message: "Devoted forever to you, my one and only love.",
+      memory: "Our first stargazing night remains unforgettable."
+    },
+    {
+      date: "2023-07-05",
+      day: "July 5",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/85b082d5-0576-47fc-b05d-66ad581e5389.png",
+      alt: "Endless road stretching into the horizon with hearts in the foreground",
+      messageTitle: "Endless Love",
+      message: "Endless love that grows with each passing day.",
+      memory: "Driving through the mountains, dreaming about forever."
+    },
+    {
+      date: "2023-07-06",
+      day: "July 6",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/16169a83-d26a-415a-8827-1c3de3f4caff.png",
+      alt: "Two rings entwined on a velvet cushion symbolizing forever yours",
+      messageTitle: "Forever Yours",
+      message: "Forever yours, with all my heart and soul.",
+      memory: "That quiet moment in the garden where we promised forever."
+    },
+    {
+      date: "2023-07-07",
+      day: "July 7",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/38b9bbce-5403-4367-a5c5-6f26f93790de.png",
+      alt: "Soft glowing lanterns floating into the night sky",
+      messageTitle: "Glowing Together",
+      message: "Glowing together, our love shines brighter every day.",
+      memory: "Our lantern festival night, full of warmth and dreams."
+    },
+    {
+      date: "2023-07-08",
+      day: "July 8",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5ff353ab-0a35-4839-980b-8701d506eb3d.png",
+      alt: "A heart drawn in the sand by the ocean shore",
+      messageTitle: "Heart Strings",
+      message: "Heart strings tied forever, you complete my melody.",
+      memory: "That day by the ocean where time stood still for us."
+    },
+    {
+      date: "2023-07-09",
+      day: "July 9",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/974b5c5e-7d3d-4679-b982-b3eb4ae74f79.png",
+      alt: "Joyful couple laughing under sunshine",
+      messageTitle: "Infinite Joy",
+      message: "Infinite joy comes from moments shared with you.",
+      memory: "Our laughter-filled hike that made every step worthwhile."
+    },
+    {
+      date: "2023-07-10",
+      day: "July 10",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/799528b1-339e-4b64-be74-515815fca91f.png",
+      alt: "Playful couple dancing in the rain",
+      messageTitle: "Joyful Times",
+      message: "Joyful times together brighten up my every day.",
+      memory: "That rainy afternoon dance we shared without a care."
+    },
+    {
+      date: "2023-07-11",
+      day: "July 11",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fcb61a36-6a5b-4398-b40c-363b8a6538b5.png",
+      alt: "Couple about to kiss with sunset behind",
+      messageTitle: "Kiss Me",
+      message: "Kiss me under the stars and seal our love forever.",
+      memory: "Our first kiss by the seaside is etched in my heart."
+    },
+    {
+      date: "2023-07-12",
+      day: "July 12",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4f1991a5-679c-4ff4-ad31-9206ab3d2e9d.png",
+      alt: "Two birds sitting closely on a branch at sunrise",
+      messageTitle: "Love Birds",
+      message: "Love birds soaring high, our hearts beat as one.",
+      memory: "Watching the sunrise together in silence and warmth."
+    },
+    {
+      date: "2023-07-13",
+      day: "July 13",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cdc3f719-9722-4055-9f7e-c5ec19caaf05.png",
+      alt: "Magical sparkles floating around a couple",
+      messageTitle: "Magical Moments",
+      message: "Magical moments with you make every day special.",
+      memory: "The surprise candlelight dinner you'll never forget."
+    },
+    {
+      date: "2023-07-14",
+      day: "July 14",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/08963ef4-63a3-4ce1-aa1a-b3195639fd3d.png",
+      alt: "Two hands holding tightly",
+      messageTitle: "Never Apart",
+      message: "Never apart, no matter where life takes us.",
+      memory: "Our long-distance calls filled with love and hope."
+    },
+    {
+      date: "2023-07-15",
+      day: "July 15",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/48251b96-c240-4f24-b3ff-bed61e42d642.png",
+      alt: "Heart shaped cloud in a blue sky",
+      messageTitle: "Only You",
+      message: "Only you hold the key to my heart forever.",
+      memory: "That cloud watching day where we talked about dreams."
+    },
+    {
+      date: "2023-07-16",
+      day: "July 16",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2f7598ec-eb15-481e-b281-cef8bced64cf.png",
+      alt: "A glowing heart made of light in the dark",
+      messageTitle: "Pure Love",
+      message: "Pure love like ours is rare and beautiful.",
+      memory: "Our silent night walk in the city, hand in hand."
+    },
+    {
+      date: "2023-07-17",
+      day: "July 17",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6a278792-89f3-4db0-81ec-83827e42d172.png",
+      alt: "Quiet lake at sunrise with soft pastel colors",
+      messageTitle: "Quiet Times",
+      message: "Quiet times with you bring peace to my soul.",
+      memory: "That calm morning by the lake where everything felt right."
+    },
+    {
+      date: "2023-07-18",
+      day: "July 18",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a2c2ff3a-2a52-462d-9105-f9698ec3d065.png",
+      alt: "Radiant sun shining through a couple's hands",
+      messageTitle: "Radiant Love",
+      message: "Radiant love that shines through all our days.",
+      memory: "When you surprised me with that beautiful bouquet."
+    },
+    {
+      date: "2023-07-19",
+      day: "July 19",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/eae42d50-fc48-4f73-8b3b-9a36c35213b1.png",
+      alt: "Luxurious white bed with rose petals",
+      messageTitle: "Sweet Dreams",
+      message: "Sweet dreams of us keep me warm through the night.",
+      memory: "Our cozy movie night under the blanket fort."
+    },
+    {
+      date: "2023-07-20",
+      day: "July 20",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5a9e328e-d02c-40b0-a080-d41a92b6b2f9.png",
+      alt: "Two shadowed figures holding hands",
+      messageTitle: "Together Forever",
+      message: "Together forever, through all life’s chapters.",
+      memory: "Our promises made under the old oak tree."
+    },
+    {
+      date: "2023-07-21",
+      day: "July 21",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a3999bcd-dd1b-45f7-9e8d-d0013fb5063d.png",
+      alt: "Rope tied tight in a unbreakable knot",
+      messageTitle: "Unbreakable Bond",
+      message: "Unbreakable bond that cannot be undone.",
+      memory: "The day we built our plans for the future."
+    },
+    {
+      date: "2023-07-22",
+      day: "July 22",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f3c396ea-148b-42ad-871b-4279f188d525.png",
+      alt: "Decorative Valentine's Day setting with candles and roses",
+      messageTitle: "Valentine Vibes",
+      message: "Valentine vibes every day because of you.",
+      memory: "That Valentine's picnic we shared in the park."
+    },
+    {
+      date: "2023-07-23",
+      day: "July 23",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/68775733-ed53-40b7-8b9a-01357e4c6b65.png",
+      alt: "Warm hugs between lovers on a chilly day",
+      messageTitle: "Warm Hugs",
+      message: "Warm hugs from you melt away all worries.",
+      memory: "That chilly winter evening wrapped in your arms."
+    },
+    {
+      date: "2023-07-24",
+      day: "July 24",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3b6d37f6-3c1c-42fa-ad30-3be3f078d391.png",
+      alt: "Handwritten note with the words XOXO, symbolizing hugs and kisses",
+      messageTitle: "XOXO Forever",
+      message: "XOXO forever, every kiss a promise.",
+      memory: "Our love notes that make me smile anytime."
+    },
+    {
+      date: "2023-07-25",
+      day: "July 25",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7a21bafa-cc87-4aa5-8f90-7edaf97156b1.png",
+      alt: "A heart carved on an old tree trunk",
+      messageTitle: "Yearning Heart",
+      message: "Yearning heart beats only for you.",
+      memory: "Waiting eagerly for you when we were apart."
+    },
+    {
+      date: "2023-07-26",
+      day: "July 26",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e2879422-6a8c-431e-9fd0-aae49b7550f3.png",
+      alt: "Gentle breeze flowing through cherry blossom trees",
+      messageTitle: "Zephyr Love",
+      message: "Zephyr love, gentle and enduring like the wind.",
+      memory: "Walking through the blooming cherry blossoms hand in hand."
+    },
+    {
+      date: "2023-07-27",
+      day: "July 27",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c96678ae-b97c-41a8-a709-28f6c1444950.png",
+      alt: "A winding path through a forest in autumn",
+      messageTitle: "Amazing Journey",
+      message: "Amazing journey with you every moment feels new.",
+      memory: "Our adventurous hike to the hidden waterfall."
+    },
+    {
+      date: "2023-07-28",
+      day: "July 28",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fb93a268-9b01-4b6e-b081-23c46bdeec09.png",
+      alt: "Endless field of wildflowers stretching to the horizon",
+      messageTitle: "Boundless Affection",
+      message: "Boundless affection that knows no limits.",
+      memory: "Our summer days cuddled in fields of lavender."
+    },
+    {
+      date: "2023-07-29",
+      day: "July 29",
+      photo: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e1d9f665-e969-458f-8450-be725a300a36.png",
+      alt: "Two hearts carved into a wooden bench",
+      messageTitle: "Cherished You",
+      message: "Cherished you in every smile and every touch.",
+      memory: "Our anniversary bench always reminds me of us."
+    }
+  ];
+
+  // Sort data alphabetically by message
+  data.sort((a, b) => a.message.localeCompare(b.message));
+
+  const tabsContainer = document.getElementById('tabs');
+  const photo = document.getElementById('photo');
+  const messageTitle = document.getElementById('message-title');
+  const messageText = document.getElementById('message-text');
+  const memoryText = document.getElementById('memory-text');
+
+  let currentTabIndex = 0;
+
+  function createTab(item, index) {
+    const tab = document.createElement('button');
+    tab.setAttribute('role', 'tab');
+    tab.setAttribute('aria-selected', 'false');
+    tab.setAttribute('tabindex', '-1');
+    tab.className = 'tab';
+    tab.id = `tab-${index}`;
+    tab.innerText = item.day;
+    tab.addEventListener('click', () => selectTab(index));
+    tab.addEventListener('keydown', (e) => {
+      let newIndex = null;
+      if (e.key === 'ArrowRight') {
+        newIndex = (index + 1) % data.length;
+      } else if (e.key === 'ArrowLeft') {
+        newIndex = (index - 1 + data.length) % data.length;
+      } else if (e.key === 'Home') {
+        newIndex = 0;
+      } else if (e.key === 'End') {
+        newIndex = data.length -1;
+      }
+      if (newIndex !== null) {
+        e.preventDefault();
+        document.getElementById(`tab-${newIndex}`).focus();
+        selectTab(newIndex);
+      }
+    });
+    return tab;
+  }
+
+  function selectTab(index) {
+    if (currentTabIndex === index) return;
+    const oldTab = document.getElementById(`tab-${currentTabIndex}`);
+    if (oldTab) {
+      oldTab.setAttribute('aria-selected', 'false');
+      oldTab.setAttribute('tabindex', '-1');
+    }
+    const newTab = document.getElementById(`tab-${index}`);
+    if (newTab) {
+      newTab.setAttribute('aria-selected', 'true');
+      newTab.setAttribute('tabindex', '0');
+      newTab.focus();
+    }
+    const selectedData = data[index];
+    photo.src = selectedData.photo;
+    photo.alt = selectedData.alt;
+    messageTitle.textContent = selectedData.messageTitle;
+    messageText.textContent = selectedData.message;
+    memoryText.textContent = selectedData.memory;
+    currentTabIndex = index;
+  }
+
+  function initialize() {
+    data.forEach((item,index) => {
+      const tab = createTab(item,index);
+      tabsContainer.appendChild(tab);
+    });
+    // Select first tab initially
+    selectTab(0);
+  }
+
+  initialize();
+
+</script>
+
+</body>
+</html>
+
+
