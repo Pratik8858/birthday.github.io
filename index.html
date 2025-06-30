@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️ | Birthday month</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.5);
+        }
+        
+        .memory-date {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+        
+        .memory-date:hover {
+            transform: translateY(-5px);
+        }
+        
+        .memory-box {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .title-font {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        @media (max-width: 768px) {
+            .memory-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .memory-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-800">
+    <!-- Video Background -->
+    <video autoplay muted loop id="video-background">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-couple-hugging-on-a-sunset-beach-1070-large.mp4" type="video/mp4">
+    </video>
+    
+    <div class="container mx-auto px-4 py-12">
+        <!-- Header Section -->
+        <header class="text-center mb-16">
+            <h1 class="title-font text-5xl md:text-7xl font-bold text-white mb-4">For My Beautiful Girlfriend</h1>
+            <p class="text-xl text-red mb-6">A July to Remember ❤️</p>
+            <div class="w-full max-w-4xl mx-auto bg-white/20 rounded-lg p-1">
+                <div class="bg-black/50 text-white p-4 rounded-lg">
+                    <h2 class="title-font text-3xl mb-2">Countdown to Your Birthday</h2>
+                    <div id="countdown" class="text-2xl font-bold"></div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Memory Grid -->
+        <div class="memory-grid grid grid-cols-3 gap-4 mb-16">
+            <!-- July 1 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(1)">
+                    <img src="https://placehold.co/600x400" alt="Couple holding hands while walking along a beach at sunset with waves gently crashing" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 1</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 2 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(2)">
+                    <img src="https://placehold.co/600x400" alt="Couple laughing together while sharing ice cream in a park on a sunny day" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 2</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 3 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(3)">
+                    <img src="https://placehold.co/600x400" alt="Romantic candlelit dinner at home with flowers and wine glasses on the table" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 3</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 4 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(4)">
+                    <img src="https://placehold.co/600x400" alt="Couple watching fireworks together with arms around each other on a summer night" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 4</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 5 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(5)">
+                    <img src="https://placehold.co/600x400" alt="Couple taking a selfie in front of famous landmark during their trip, smiling happily" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 5</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 6 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(6)">
+                    <img src="https://placehold.co/600x400" alt="Couple cuddling on the couch watching a movie with popcorn bowl between them" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 6</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 7 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(7)">
+                    <img src="https://placehold.co/600x400" alt="Couple dancing closely together at a romantic outdoor wedding reception" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 7</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 8 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(8)">
+                    <img src="https://placehold.co/600x400" alt="Couple hiking together on a mountain trail with beautiful valley views below" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 8</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 9 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(9)">
+                    <img src="https://placehold.co/600x400" alt="Couple enjoying breakfast in bed on a lazy Sunday morning" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 9</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 10 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(10)">
+                    <img src="https://placehold.co/600x400" alt="Couple walking through a flower garden holding hands with sunlight filtering through trees" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 10</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 11 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(11)">
+                    <img src="https://placehold.co/600x400" alt="Couple wearing matching pajamas while decorating their Christmas tree together" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 11</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 12 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(12)">
+                    <img src="https://placehold.co/600x400" alt="Couple laughing while trying to bake cookies together with flour smudges on their faces" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 12</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 13 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(13)">
+                    <img src="https://placehold.co/600x400" alt="Couple standing back-to-back smiling at the camera during golden hour in autumn leaves" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 13</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 14 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(14)">
+                    <img src="https://placehold.co/600x400" alt="Couple on a tandem bicycle riding through a scenic park path lined with trees" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 14</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 15 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(15)">
+                    <img src="https://placehold.co/600x400" alt="Couple at a concert holding hands and singing along to their favorite song" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 15</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 16 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(16)">
+                    <img src="https://placehold.co/600x400" alt="Couple reading books together in a cozy coffee shop with steaming mugs on the table" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 16</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 17 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(17)">
+                    <img src="https://placehold.co/600x400" alt="Couple pointing at baby animals at the zoo while holding hands and smiling" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 17</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 18 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(18)">
+                    <img src="https://placehold.co/600x400" alt="Couple walking through a farmer's market sampling fresh produce and smiling" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 18</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 19 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(19)">
+                    <img src="https://placehold.co/600x400" alt="Couple playing board games at home with snacks and drinks on the table between them" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 19</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 20 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(20)">
+                    <img src="https://placehold.co/600x400" alt="Couple stargazing on a blanket in a field with the milky way visible above" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 20</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 21 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(21)">
+                    <img src="https://placehold.co/600x400" alt="Couple standing under an umbrella during a summer rain shower sharing a kiss" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 21</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 22 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(22)">
+                    <img src="https://placehold.co/600x400" alt="Couple posing with their faces painted at a carnival with colorful lights in background" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 22</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 23 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(23)">
+                    <img src="https://placehold.co/600x400" alt="Couple wearing matching Halloween costumes smiling at a party" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 23</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 24 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(24)">
+                    <img src="https://placehold.co/600x400" alt="Couple wrapped in blankets sitting by a bonfire with marshmallows on sticks" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 24</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 25 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(25)">
+                    <img src="https://placehold.co/600x400" alt="Couple riding horses together through a forest trail at golden hour" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 25</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 26 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(26)">
+                    <img src="https://placehold.co/600x400" alt="Couple wearing snorkeling gear giving thumbs up underwater with tropical fish swimming around" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 26</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 27 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(27)">
+                    <img src="https://placehold.co/600x400" alt="Couple building a snowman together in their backyard with hats and scarves on" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 27</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 28 -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(28)">
+                    <img src="https://placehold.co/600x400" alt="Couple holding hands and jumping with joy in front of a waterfall" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="title-font text-2xl text-center">July 28</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- July 29 (Birthday) -->
+            <div class="memory-date p-2">
+                <div class="memory-box rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl" onclick="showMemory(29)" style="box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);">
+                    <img src="https://placehold.co/600x400" alt="Birthday celebration with balloons, cake, and presents - girl blowing out candles while boyfriend watches lovingly" class="w-full h-48 object-cover" />
+                    <div class="p-4 bg-gradient-to-r from-pink-500 to-purple-500">
+                        <h3 class="title-font text-2xl text-center text-white">July 29 ❤️</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Memory Modal -->
+    <div id="memoryModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/70" onclick="hideMemory()"></div>
+        <div class="relative w-full max-w-4xl bg-white rounded-xl shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto">
+            <button class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-3xl" onclick="hideMemory()">×</button>
+            <div class="md:flex">
+                <div class="md:w-1/2">
+                    <img id="modalImage" src="" alt="" class="w-full h-full max-h-[70vh] object-cover" />
+                </div>
+                <div class="md:w-1/2 p-8">
+                    <h2 id="modalDate" class="title-font text-4xl mb-4 text-pink-600"></h2>
+                    <div id="modalMessage" class="prose text-gray-700"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-black/50 text-white py-8 text-center">
+        <p class="title-font text-xl">Created with love for you</p>
+    </footer>
+    
+    <script>
+        // Countdown to July 29 (birthday)
+        function updateCountdown() {
+            const now = new Date();
+            let targetDate = new Date(now.getFullYear(), 6, 29); // July is month 6 (0-indexed)
+            
+            // If birthday has already passed this year, target next year
+            if (now > targetDate) {
+                targetDate = new Date(now.getFullYear() + 1, 6, 29);
+            }
+            
+            const diff = targetDate - now;
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown').innerHTML = `
+                ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds
+            `;
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Memory data - messages for each day
+        const memories = {
+            1: {
+                message: "Remember our first date on 27th April? I was so nervous, but the moment I saw your smile, I knew this was something special. The way you laughed at my silly jokes made my heart skip a beat."
+            },
+            2: {
+                message: "Always in my heart, you light up every day. You are my sunshine and the moonlight for the day."
+            },
+            3: {
+                message: "Beautiful moments shared with you make life extraordinary. Our picnic in the blooming fields will always be special."
+            },
+            4: {
+                message: "Cherished memories we create are treasures of my soul. That evening walk we had. "
+            },
+            5: {
+                message: "Devoted forever to you, my one and only love. You are always my wish I prayed to God. "
+            },
+            6: {
+                message: "Endless love that grows with each passing day. Driving through the streets, dreaming about forever. "
+            },
+            7: {
+                message: "Forever yours, with all my heart and soul. That quiet moments where we promised forever. "
+            },
+            8: {
+                message: "Glowing together, Supporting each other with highs and lows. "
+            },
+            9: {
+                message: "Heart strings tied forever, you complete my melody. That day by the ocean where time stood still for us. "
+            },
+            10: {
+                message: "Infinite joy comes from moments shared with you. Our laughter-filled time that made every day worthwhile."
+            },
+            11: {
+                message: "Joyful times together brighten up my every day. That rainy afternoon at coffee shop memories we shared without a care."
+            },
+            12: {
+                message: "Kiss me under the stars and seal our love forever. Our first kiss is etched in my heart."
+            },
+            13: {
+                message: "Love birds soaring high, our hearts beat as one. Watching the sunrise after latenight talks. "
+            },
+            14: {
+                message: "Magical moments with you make every day special. The surprise meeting you'll never forget."
+            },
+            15: {
+                message: "Never apart, no matter where life takes us. Our long-distance calls filled with love and hope."
+            },
+            16: {
+                message: "Only you hold the key to my heart forever. That cloud watching evening near phy dept where we talked about dreams. "
+            },
+            17: {
+                message: "Pure love like ours is rare and beautiful. P for Pratik (PR) the symbol, the name for our of pure love."
+            },
+            18: {
+                message: "Quiet times with you bring peace to my soul. where everything felt right."
+            },
+            19: {
+                message: "Radiant love that shines through all our days. When You suprised me with that beautiful watch."
+            },
+            20: {
+                message: "Sweet dreams of us keep me warm through the night. Our cozy movie night under the blanket fort."
+            },
+            21: {
+                message: "Together forever, through all life’s chapters. Our promises made under the old tree."
+            },
+            22: {
+                message: "Unbreakable bond that cannot be undone. The day we built our plans for the future."
+            },
+            23: {
+                message: "Vibes every day because of you. The bkchodi we do everyday. "
+            },
+            24: {
+                message: "Warm hugs from you melt away all worries. That chilly time wrapped in your arms. "
+            },
+            25: {
+                message: "XOXO forever, every kiss a promise. Our love messages that make me smile anytime."
+            },
+            26: {
+                message: "Yearning heart beats only for you. Waiting eagerly for you when we were apart."
+            },
+            27: {
+                message: "Zephyr love, gentle and enduring like the wind. Walking through the blooming cherry blossoms hand in hand."
+            },
+            28: {
+                message: "The message sent by you imprinted in my heart. Tumhara or mera sheher ek ni h...🥺Pr hmari bth pure din hoti h... Pr najane q har Khushi sb se phle tumhe suna ne ka Dil krta h har dhukh phle tumhe btane ka Dil krta h... Tumhe lga h mai tumhe sochti ni but tujhe kaise btau mai tere Bina kuch sochti ni... Tumhe lgta h mai har mehfil me Magan rehti hu but mai kaise  btau mujhe hr mehfil me tum dikhte ho. Agr tum yaha hota to kaise hota vaha hota toh kaise hota mujhe jhumne ka waqt tb mile n jb mai tere khayalo se waqt mile. Aksar jo hmare door hote h unhe lgta h hm unke bina complete h lekin nhi Mai har paal tumhi dhundte rehti hu. q ki Mera har pal tumhare Bina adura h🥺❤, I'M MISSING YOU ALOT 🥺 . "
+            },
+            29: {
+                message: "Happy Birthday my love! On this day the world was gifted with the most beautiful soul I've ever known. Thank you for another year of laughter, adventures, and your incredible love. Every moment with you is a treasure I cherish. Here's to celebrating YOU today and creating countless more beautiful memories together. I love you more than words could ever express."
+            }
+        };
+        
+        // Show memory in modal
+        function showMemory(day) {
+            const memory = memories[day];
+            document.getElementById('modalImage').src = `https://placehold.co/800x600?text=July+${day}`;
+            document.getElementById('modalImage').alt = `Memory from July ${day}`;
+            document.getElementById('modalDate').textContent = `July ${day} ${day === 29 ? '❤️' : ''}`;
+            document.getElementById('modalMessage').innerHTML = `<p class="text-lg">${memory.message}</p>`;
+            document.getElementById('memoryModal').classList.remove('hidden');
+        }
+        
+        // Hide memory modal
+        function hideMemory() {
+            document.getElementById('memoryModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
